@@ -17,42 +17,42 @@ namespace LinqLab
 
         public Sample 搜尋UserName等於demo的資料使用First()
         {
-            var result = Source.Where(d => d.UserName == "demo").First();
+            var result = new Sample();
             return result;
         }
 
         public Sample 搜尋UserName等於skilltree的資料使用FirstOrDefault()
         {
-            var result = Source.Where(d => d.UserName == "skilltree").FirstOrDefault();
+            var result = new Sample();
             return result;
         }
 
         public Sample 搜尋UserName等於skilltree的資料使用First()
         {
-            var result = Source.Where(d => d.UserName == "skilltree").First();
+            var result = new Sample();
             return result;
         }
 
         public Sample 搜尋UserName等於demo的資料使用Single()
         {
-            var result = Source.Where(d => d.UserName == "demo").Single();
+            var result = new Sample();
             return result;
         }
 
         public Sample 搜尋UserName等於bill的資料使用Single()
         {
-            var result = Source.Where(d => d.UserName == "bill").Single();
+            var result = new Sample();
             return result;
         }
         public Sample 搜尋UserName等於bill的資料使用SingleOrDefault()
         {
-            var result = Source.Where(d => d.UserName == "bill").SingleOrDefault();
+            var result = new Sample();
             return result;
         }
 
         public Sample 搜尋UserName等於skilltree的資料使用SingleOrDefault()
         {
-            var result = Source.Where(d => d.UserName == "skilltree").SingleOrDefault();
+            var result = new Sample();
             return result;
         }
     }

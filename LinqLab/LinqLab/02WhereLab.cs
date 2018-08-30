@@ -15,46 +15,44 @@ namespace LinqLab
         }
         public List<Sample> 搜尋Id大於8的資料()
         {
-            var result = Source.Where(d => d.Id > 8).ToList();
+            var result = new List<Sample>();
             return result;
         }
 
         public List<Sample> 搜尋Price等於200的資料()
         {
-            var result = Source.Where(d => d.Price == 200).ToList();
+            var result = new List<Sample>();
             return result;
         }
 
         public List<Sample> 搜尋UserName開頭為d的資料()
         {
-            var result = Source.Where(d => d.UserName.StartsWith("d")).ToList();
+            var result = new List<Sample>();
             return result;
         }
 
         public List<Sample> 搜尋UserName包含e的資料()
         {
-            var result = Source.Where(d => d.UserName.Contains("e")).ToList();
+            var result = new List<Sample>();
             return result;
         }
 
         public List<Sample> 搜尋UserName結尾為o的資料()
         {
-            var result = Source.Where(d => d.UserName.EndsWith("o")).ToList();
+            var result = new List<Sample>();
             return result;
         }
 
         public List<Sample> 搜尋UserName是demo和joey的資料()
         {
             var whereStr = new[] {"demo","joey" };
-            var result = Source.Where(d =>whereStr.Contains( d.UserName)).ToList();
+            var result = new List<Sample>();
             return result;
         }
 
         public bool 判斷是否有Id等於99的資料()
         {
-            var result = Source.Where(d =>d.Id==99).Any();
-            //var result = Source.FirstOrDefault(d => d.Id == 99)!=null;
-            //var result = Source.Where(d => d.Id == 99).Count()>0;
+            var result = true;
             return result;
         }
     }
